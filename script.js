@@ -8,7 +8,7 @@ const form = document.querySelector('form');
         const listItemsArray = Array.from(list.children);
         const searchInput = document.querySelector('#search-todo');
         const todos = JSON.parse(localStorage.getItem('todos')) || [];
-
+77
 
         function addTodos(e) {
             e.preventDefault();
@@ -63,4 +63,3 @@ const form = document.querySelector('form');
         list.addEventListener('click', deleteTodos);
         searchInput.addEventListener('keyup', searchTodos);
         populateList(todos, list);
-
